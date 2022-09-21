@@ -1,0 +1,272 @@
+* {
+  margin: 0px;
+}
+header {
+  background-color: #eac926;
+}
+
+body {
+  background-color: #ebebeb;
+  font-family: "Roboto", sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
+}
+img {
+  width: 100%;
+}
+.busqueda {
+    text-align: center;
+    flex-grow: 5;
+    padding-top: 5vh;
+    padding-left: 1vh;
+    padding-right: 1vh;
+    display: flex;
+    
+}
+.barrabusqueda {
+  border: white solid 1vh;
+  border-radius: 1vh;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  width: 100%;
+}
+.botonbusqueda {
+  background-color: white;
+  border: white solid 1vh;
+  border-radius: 1vh;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+#padding {
+  padding-left: 5vw;
+  padding-right: 5vw;
+  
+}
+.descuentos {
+  color: green;
+  margin: 0;
+  flex-grow: 7;
+  box-sizing: border-box;
+  padding-top: 5px;
+}
+
+.descripciones {
+  
+  color: #666;;
+  text-align: left;
+  margin: 2vw;
+  font-size: 16px;
+  visibility: hidden;
+}
+
+.articulo-sec:hover .descripciones {
+  visibility: visible;
+  transition-duration: 0,5s;
+  
+}
+
+.precios {
+  font-size: 24px;
+  margin: 0;
+  flex-grow: 3;
+  
+}
+
+.burger-menu {
+  text-align: center;
+  border-bottom: solid #eac926 2vh ;
+}
+.burger-menu i {
+  background-color: #1259c3;
+  border-radius: 15%;
+  color: white;
+  padding: 10px;
+}
+main {
+  text-align: center;
+  width: 90%;
+  margin: auto;
+}
+ul {
+  list-style-type: none;
+  margin: 10px;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+footer {
+  text-align: center;
+  background-color: white;
+}
+.icons-blue {
+  color: #1259c3;
+  width: 2em;
+  margin-top: 5vw;
+}
+.icons-blue:hover {
+  color: gray;
+  transition-duration: 0,6s;
+}
+.articulo-sec {
+  
+  margin: 10px;
+  background-color: white;
+  transition-property: all, 0,5s;
+}
+.articulo-sec:hover {
+  box-shadow: 0px 0px 10px rgb(100, 100, 100);
+  
+}
+.item-detalle {
+    border-top: 1px solid #ebebeb; 
+    border-bottom: 1px solid white;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    background-color: white;
+    text-align: left;
+    padding: 15px;
+    position: relative;
+    display: flex;
+}
+#camion {
+  display: block;
+font-size: 16px;
+padding: 5px;
+width: 30px;
+height: 30px;
+border: 1px solid #39b54a;
+background-color: #FFF;
+border-radius: 50%;
+position: absolute;
+right: 20px;
+top: -15px;
+box-sizing: border-box ;
+}
+.truck{
+    color: #39b54a;
+    width: 20px;
+    padding: 2vw;
+    border: 1px solid #39b54a; 
+    border-radius: 50% ;
+}
+
+.truck:hover {
+  transform: rotateZ(-90deg);
+  transition-duration: 1s;
+}
+
+.lista-adaptable {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.encabezado {
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+.img-header {
+  flex-grow: 5;
+  width: 40%;
+  padding-top: 5vh;
+  padding-left: 5vh;
+  
+}
+.header-item-1 {
+  padding: 5vh;
+  width: 100%;
+  text-align: center;
+}
+.nav-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  
+}
+.ul-item {
+  padding: 2vh;
+}
+
+footer section p i {
+  font-size: 8vh;
+}
+
+@media (min-width: 319px) {
+
+
+.nav-header {
+   display: none;
+}
+.img-header {
+  width: 25%;
+}
+}
+
+@media (min-width: 426px) {
+.articulo-sec{
+  
+  width: 47%;
+}  
+
+nav {
+   display: block;
+}
+.nav-header{
+  display:flex ;
+}
+.burger-menu{
+  display: none;
+}
+.img-header{
+  flex-grow: 3;
+  width: 25%;
+}
+.busqueda {
+  flex-grow: 3.5;
+  padding-top: 10vh;
+  padding-left: 2vh;
+  padding-bottom: 5vh;
+}
+.header-item-1 {
+  flex-grow: 1;
+  padding-top: 10vh;
+  width: 25%;
+  text-align: left;
+}
+
+}
+
+
+@media (min-width: 769px) {
+  .img-header {
+    width: 2%;
+    margin-right: 2vh;
+  }
+  .articulo-sec{
+    width: 22%;
+  }
+  .busqueda {
+    padding-bottom: 5vh;
+    width: 110%;
+    
+  }
+  .header-item-1 {
+    text-align: center;
+  }
+  
+  .footer {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .footer-section {
+    width: 30%;
+    padding: 2vh;
+  }
+  .derechos {
+    width: 100%;
+    text-align: left;
+    padding-left: 5vh;
+  }
+}
